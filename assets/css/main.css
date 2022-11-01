@@ -21,6 +21,55 @@
   scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+	width: 15px;
+}
+
+::-webkit-scrollbar-track {
+	background:#d3d3d3;
+}
+   
+::-webkit-scrollbar-thumb {
+	background: #949494;  
+}
+  
+::-webkit-scrollbar-thumb:hover {
+	background: #FFD923; 
+}
+
+/* Buttons */
+::-webkit-scrollbar-button:single-button {
+	background-color: #949494;
+  	display: block;
+	border-style: solid;
+    height: 13px;
+    width: 16px;
+}
+
+/* Up */
+::-webkit-scrollbar-button:single-button:vertical:decrement {
+    border-width: 0 8px 8px 8px;
+    border-color: transparent transparent #d3d3d3 transparent;
+}
+::-webkit-scrollbar-button:single-button:vertical:decrement:hover {
+    border-color: transparent transparent #FFD923 transparent;
+}
+
+/* Down */
+::-webkit-scrollbar-button:single-button:vertical:increment {
+    border-width: 8px 8px 0 8px;
+    border-color: #d3d3d3 transparent transparent transparent;
+}
+::-webkit-scrollbar-button:vertical:single-button:increment:hover {
+    border-color: #FFD923 transparent transparent transparent;
+}
+
+@supports(scrollbar-color: #FFD923 #d3d3d3){
+	*{
+		scrollbar-color: #FFD923 #d3d3d3;
+	}
+}
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
